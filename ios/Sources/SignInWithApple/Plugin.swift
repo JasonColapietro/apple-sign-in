@@ -65,7 +65,8 @@ extension SignInWithApple: ASAuthorizationControllerDelegate {
                 "givenName": appleIDCredential.fullName?.givenName,
                 "familyName": appleIDCredential.fullName?.familyName,
                 "identityToken": String(data: appleIDCredential.identityToken!, encoding: .utf8),
-                "authorizationCode": String(data: appleIDCredential.authorizationCode!, encoding: .utf8)
+                "authorizationCode": String(data: appleIDCredential.authorizationCode!, encoding: .utf8),
+                "state": appleIDCredential.state
             ]
         ]
 
